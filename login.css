@@ -1,0 +1,122 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Pure black background */
+    color: #fff; /* White text for readability */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* Login Container */
+  .login-container {
+    background: #111; /* Slightly lighter black for contrast */
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* Soft glowing shadow */
+    text-align: center;
+    width: 360px; /* Fixed width for consistent layout */
+  }
+  
+  /* Header */
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    background: orange; /* Bright orange for emphasis */
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  /* Input Labels */
+  .input-label {
+    font-size: 14px;
+    color: orange;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  /* Input Fields */
+  .input-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-container .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #666; /* Subtle color for icons */
+  }
+  
+  .input-container input {
+    width: 100%;
+    padding: 12px 12px 12px 40px; /* Spacing for icon */
+    border: 1px solid #333;
+    border-radius: 6px;
+    background: #222; /* Dark background for fields */
+    color: #fff; /* White text for readability */
+    font-size: 14px;
+  }
+  
+  .input-container input:focus {
+    border-color: orange;
+    outline: none;
+    box-shadow: 0 0 5px orange; /* Add glow on focus */
+  }
+  
+  /* Button Styles */
+  .btn {
+    display: block;
+    width: 100%;
+    background: orange;
+    color: #000; /* Black text on button */
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #ff9500; /* Slightly darker orange for hover */
+  }
+  
+  /* Options Links */
+  .options {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .options a {
+    font-size: 14px;
+    color: orange;
+    transition: color 0.3s ease;
+  }
+  
+  .options a:hover {
+    color: #ff9500; /* Darker orange on hover */
+  }

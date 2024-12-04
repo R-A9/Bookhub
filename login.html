@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Hub - Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-container">
+    <header>
+      <h1>Book <span class="highlight">hub</span></h1>
+    </header>
+    <form class="login-form">
+      <!-- Username Section -->
+      <label for="username" class="input-label">Username:</label>
+      <div class="input-container">
+        <span class="icon">👤</span>
+        <input 
+          type="text" 
+          id="username" 
+          name="username" 
+          placeholder="Username" 
+          required 
+          autocomplete="username"
+        >
+      </div>
+      <!-- Password Section -->
+      <label for="password" class="input-label">Password:</label>
+      <div class="input-container">
+        <span class="icon">🔒</span>
+        <input 
+          type="password" 
+          id="password" 
+          name="password" 
+          placeholder="Password" 
+          required 
+          autocomplete="current-password"
+        >
+      </div>
+      <!-- Sign-In Button -->
+      <button type="submit" class="btn">Sign In</button>
+      <!-- Additional Options -->
+      <div class="options">
+        <a href="signup.html" class="create-account">Create Account</a>
+        <a href="" class="forgot-password">Forgot Password?</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

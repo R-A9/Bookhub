@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Hub - Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h1>Book <span class="highlight">hub</span></h1>
+        <nav>
+          <ul>
+            <li class="active">Dashboard</li>
+            <li>Books</li>
+            <li>About us</li>
+            <li>Favorites</li>
+            <li>Library</li>
+            <li>Profile</li>
+          </ul>
+        </nav>
+        <div class="logout">
+          <button>Logout</button>
+        </div>
+      </aside>
+  
+      <!-- Main Content -->
+      <main>
+        <section class="stats">
+          <div class="stat-box">
+            <h3>Total Books Returned</h3>
+            <p>57</p>
+          </div>
+          <div class="stat-box">
+            <h3>Pending Books to Borrow</h3>
+            <p>4</p>
+          </div>
+          <div class="stat-box">
+            <h3>Books on Hand</h3>
+            <p>2</p>
+          </div>
+        </section>
+        <section class="table-section">
+          <table>
+            <thead>
+              <tr>
+                <th>Book Name</th>
+                <th>Genre</th>
+                <th>Borrow Date</th>
+                <th>Return Date</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="status borrowed"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="status borrowed"></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+  </body>
