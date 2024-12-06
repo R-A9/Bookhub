@@ -2,7 +2,7 @@
 
 Bookhub is a library management system designed for user convenience, for both administrative and student user. It aims to decrease the time and effort needed for library operations, may be it a student borrowing a book or a librarian approving or declining a borrow request. It also has a feature that suggests books that a user might like. 
 
-Visit us [here](https://bookhhub.c1phertime.me).
+Visit us [here](https://bookhub.c1phertime.me).
 
 # Future plans
 
