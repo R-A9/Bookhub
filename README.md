@@ -7,7 +7,6 @@ Bookhub is a library management system designed for user convenience, for both a
 Bookhub's frontend is currently hosted on a B2ats Microsoft Azure virtual instance. However, come the day that it has become a full-fledged system, comes also plans for fast operation.
 
 Our plans are:
-+ Use another B2ats instance for database operation
++ Use another B2ats instance solely for database operation
 + Use React.js for code reusability
 + PHP for backend?
-+ WAF for anti-SQLi
