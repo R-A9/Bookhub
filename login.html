@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet">
   <title>Book Hub - Login</title>
   <link rel="stylesheet" href="login.css">
 </head>
@@ -11,11 +13,11 @@
     <header>
       <h1>Book <span class="highlight">hub</span></h1>
     </header>
-    <form class="login-form">
+    <form action="dashboard.html" class="login-form">
       <!-- Username Section -->
       <label for="username" class="input-label">Username:</label>
       <div class="input-container">
-        <span class="icon">👤</span>
+        <i class="bi bi-person icon"></i>
         <input 
           type="text" 
           id="username" 
@@ -28,7 +30,7 @@
       <!-- Password Section -->
       <label for="password" class="input-label">Password:</label>
       <div class="input-container">
-        <span class="icon">🔒</span>
+        <i class="bi bi-lock-fill icon"></i>
         <input 
           type="password" 
           id="password" 

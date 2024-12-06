@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  /* Back Button */
+  .back-button {
+    background: orange;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+    float:left;
+  }
+  
+  .back-button:hover {
+    background: #ff9500;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+  }
+  .highlight {
+    background: orange; /* Bright orange for emphasis */
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #000;
+  
+  }
+  .logo {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .logo .hub {
+    color: orange;
+  }
+  
+  .search-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    margin-right: 10px;
+  }
+  
+  .search-btn {
+    background: orange;
+    color: #000;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .search-btn:hover {
+    background: #ff9500;
+  }
+  
+  /* Book Grid */
+  .book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .book-item {
+    text-align: center;
+  }
+  
+  .book-item img {
+    width: 120px;
+    height: 180px;
+    border-radius: 8px;
+    border: 2px solid orange;
+    margin-bottom: 10px;
+  }
+  
+  .book-item p {
+    font-size: 14px;
+    color: #fff;
+  }
+
+  .bhub{
+    font-family: "Roboto Condensed";
+  }
