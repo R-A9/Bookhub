@@ -15,7 +15,7 @@ body, html {
   
   .bg-image {
     /* The image used */
-    background-image: url("assets/img/books.jpg");
+    background-image: url("../img/books.jpg");
     margin: 0;
     text-decoration:none;
     outline: none;
