@@ -6,7 +6,7 @@ Visit us [here](https://bookhub.c1phertime.me).
 
 # Future plans
 
-** UPDATE: **
+**UPDATE:**
 
 The Azure instance used to host Bookhub's frontend has been taken down due to lack of funds needed for proper hosting. It will be brought back up when the project is nearing the backend development phase.
 
