@@ -10,9 +10,10 @@ Visit us [here](https://bookhub.c1phertime.me).
 
 The Azure instance used to host Bookhub's frontend **__has been taken down__** due to lack of funds needed for proper hosting. It will be brought back up when the project is nearing the backend development phase.
 
+For the meantime, it will be hosted locally using a Raspberry Pi 1 B+. 
 
-> ~~Bookhub's frontend is currently hosted on a B2ats Microsoft Azure virtual instance.~~ 
-However, come the day that it has become a full-fledged system, comes also plans for fast operation.
+
+~~Bookhub's frontend is currently hosted on a B2ats Microsoft Azure virtual instance.  However, come the day that it has become a full-fledged system, comes also plans for fast operation.~~
 
 The plans are:
 + ~~Use another B2ats instance solely for database operation~~
