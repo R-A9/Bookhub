@@ -15,7 +15,7 @@ The Azure instance used to host Bookhub's frontend **__has been taken down__** d
 However, come the day that it has become a full-fledged system, comes also plans for fast operation.
 
 The plans are:
-+ Use another B2ats instance solely for database operation
++ ~~Use another B2ats instance solely for database operation~~
 + Upgrade to higher-spec instance, or local hosting
 + Use React.js for code reusability
 + PHP for backend?
