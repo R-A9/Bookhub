@@ -3,65 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recommendations</title>
+  <title>Book Hub - Dashboard</title>
   <link rel="stylesheet" href="assets/css/books.css">
-  <link rel="icon" href="assets/img/bookhub.png">
+  <link rel="icon" href="assets/img/bookhub.jpg">
 </head>
 <body>
-  <!-- Back Button -->
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h1>Book <span class="highlight">hub</span></h1>
+        <nav>
+          <ul>
+            <a href="dashboard.html"><li>Dashboard</li></a>
+            <li class="active">Books</li></a>
+            <a href="aboutus.html"><li>About us</li></a>
+            <li>Favorites</li>
+            <li>Library</li>
+            <a href="profile.html"><li>Profile</li></a>
+          </ul>
+        </nav>
+        <div class="logout">
+        <button><strong>Logout</strong></button>
+        </div>
+      </aside>
 
-
-  <!-- Header -->
-  <header class="header">
-    <button class="back-button" onclick="window.history.back()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
-      </svg></button>
-    <header>
-        <h1 class="bhub">Book <span class="highlight">hub</span></h1>
-      </header>
-    <div class="search-container">
-      <input type="text" placeholder="Search" class="search-bar">
-      <button class="search-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-      </svg></button>
-    </div>
-  </header>
-
-  <!-- Book Grid -->
-  <section class="book-grid">
-    <!-- Placeholder Books -->
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="search-container">
+    <input type="text" placeholder="Search" class="search-bar">
+    <button class="search-button">🔍</button>
+  </div>
+</div>
+<!-- Main Content -->
+<main class="dashboard-content">
+  <div class="books-container">
     <div class="book-item">
-      <img src="assets/img/dindo3k.png" alt="Book Cover">
+      <img src="assets/img/hp.jpg" alt="HP-Sorcerer's">
+      <p>HP-Sorcerer's</p>
+    </div>
+    <div class="book-item">
+      <img src="assets/img/the100.jpg" alt="The 100">
+      <p>The 100</p>
+    </div>
+    <div class="book-item">
+      <img src="assets/img/nuclearwar.jpg" alt="Nuclear War">
+      <p>Nuclear War</p>
+    </div>
+    <div class="book-item">
+      <img src="assets/img/catcher.jpeg" alt="The Catcher in the Rye">
+      <p>The Catcher in the Rye</p>
+    </div>
+    <div class="book-item">
+      <img src="assets/img/dindo.jpg" alt="Dindo 3000">
       <p>Dindo 3000</p>
     </div>
     <div class="book-item">
-      <img src="assets/img/placeholder.png" alt="Book Cover">
-      <p>Book Title 2</p>
+      <img src="assets/img/young.jpg" alt="Young Hitler">
+      <p>Young Hitler: The Making of the Fuhrer</p>
     </div>
     <div class="book-item">
-      <img src="assets/img/placeholder.png" alt="Book Cover">
-      <p>Book Title 3</p>
+      <img src="assets/img/theopen.jpg" alt="The Open Mind">
+      <p>The Open Mind</p>
     </div>
     <div class="book-item">
-      <img src="assets/img/placeholder.png" alt="Book Cover">
-      <p>Book Title 4</p>
+      <img src="assets/img/hello.jpeg" alt="Hello, Nagkaon Ka Na Love?">
+      <p>Hello, Nagkaon Ka Na Love?</p>
     </div>
     <div class="book-item">
-      <img src="assets/img/placeholder.png" alt="Book Cover">
-      <p>Book Title 5</p>
+      <img src="assets/img/starboy.jpg" alt="Starboy">
+      <p>Starboy</p>
     </div>
-    <div class="book-item">
-      <img src="assets/img/placeholder.png" alt="Book Cover">
-      <p>Book Title 6</p>
-    </div>
-    <div class="book-item">
-      <img src="assets/img/placeholder.png" alt="Book Cover">
-      <p>Book Title 7</p>
-    </div>
-    <div class="book-item">
-      <img src="assets/img/placeholder.png" alt="Book Cover">
-      <p>Book Title 8</p>
-    </div>
-  </section>
-</body>
-</html>
+  </div>
+</main>
+
+  </div>
+  </body>
