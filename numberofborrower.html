@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book Hub - Book Statistics</title>
-  <link rel="stylesheet" href="assets/css/bookstats.css">
+  <link rel="stylesheet" href="assets/css/numberofborrower.css">
   <link rel="icon" href="assets/img/bookhub.png">
 </head>
 <body>
@@ -16,7 +16,7 @@
         <ul>
           <li><a href="dashboard_admin.html"><strong>Dashboard</strong></li></a>
           <a href="usermanagement.html"><li><strong>User Management</strong></li></a>
-          <li class="active"><strong>Book Statistics</strong></li>
+          <li class="active"><a href="bookstats.html"><strong>Book Statistics</strong></li></a>
         </ul>
       </nav>
       <div class="logout">
@@ -26,23 +26,11 @@
 
     <!-- Main Content -->
     <main>
-        <section class="stats">
-          <div class="stat-box">
-            <h3>Most Popular Book</h3>
-            <p>The 100</p>
-          </div>
-          <div class="stat-box">
-            <h3>Total Books in Library</h3>
-            <p>30</p>
-          </div>
-          <div class="stat-box"><a href="numberofborrower.html">
-            <h3>No. Of Borrowers</h3>
-            <p>3</p>
-          </div></a>
-        </section>
+
       
         <!-- Table and Chart Container -->
         <section class="table-chart-container">
+            <h1>Book Borrowers</h1>
           <!-- Table for User Details -->
           <table class="user-table">
             <thead>
@@ -50,39 +38,37 @@
                 <th>Book ID</th>
                 <th>Book Name</th>
                 <th>Quantity</th>
-                <th>Author</th>
-                <th>Issued Date</th>
+                <th>Borrower</th>
+                <th>Borrow Date&Time</th>
+                <th>Return Date</th>
+                <th>Status</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>1111</td>
                 <td>Dindo 3000</td>
-                <td>2</td>
-                <td>Guillian Dawal</td>
-                <td>20/11/2024</td>
+                <td>1</td>
+                <td>John Cena</td>
+                <td>November 10, 2024, 8:30AM</td>
+                <td>November 15, 2024</td>
+                <td>Borrowed</td>
               </tr>
               <tr>
                 <td>1112</td>
                 <td>The 100</td>
-                <td>2</td>
-                <td>Kass Morgan</td>
-                <td>20/11/2024</td>
+                <td>1</td>
+                <td>Snoop Dogg</td>
+                <td>November 16, 2024 9:40AM</td>
+                <td>November 20, 2024</td>
+                <td>Damaged. 500PHP fine</td>
               </tr>
               <!-- Add more rows here as needed -->
             </tbody>
           </table>
       
           <!-- Chart Section -->
-          <div class="chart-section">
-            <div class="chart-container">
-              <canvas id="donutChart" width="150" height="150"></canvas>
-              <div class="chart-labels">
-                <p><span class="yellow"></span> Available Books</p>
-                <p><span class="red"></span> Borrowed Books</p>
-            </div>
-            </div>
-          </div>
+
         </section>
       </main>
       

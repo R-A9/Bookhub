@@ -97,28 +97,24 @@ main {
   
   /* Add flexbox container for table and chart */
   .table-chart-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    gap: 40px; /* Adjust the space between the table and chart */
-    margin-top: 20px;
+    margin:auto;
   }
   
   /* Table Styles */
   .user-table {
     width: 100%;
-    max-width: 600px; /* Restrict the table width */
+    max-width: 700px; /* Restrict the table width */
     margin-bottom: 20px;
     border-collapse: collapse;
     background-color: #222;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
   }
   
   .user-table th, .user-table td {
-    padding: 12px 15px;
+    padding: 20px 35px;
     text-align: center;
-    border-bottom: 1px solid #444;
+    
   }
   
   .user-table th {
@@ -128,23 +124,7 @@ main {
   .user-table tr:hover {
     background-color: #444;
   }
-  
-  /* Chart Section */
-  .chart-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    flex: 1; /* Allow the chart to take remaining space */
-  }
-  
-  .chart-container {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-  }
-  
+    
   canvas {
     display: block;
     margin: 0 auto;
@@ -178,35 +158,7 @@ main {
   }
   
   
-  /* Stats Section */
-  .stats {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .stat-box {
-    flex: 1;
-    max-width: 250px; 
-    background: #222; 
-    padding: 20px;
-    text-align: center;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-  }
-  
-  .stat-box h3 {
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: orange;
-  }
-  
-  .stat-box p {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
-  }
+ 
   
   /*makes the effects on links stay the same*/
   a {
@@ -236,7 +188,7 @@ main {
   .modal-content {
     background-color: #222;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     width: 80%;
     max-width: 400px;
@@ -289,75 +241,4 @@ main {
     cursor: pointer;
   }
 
-  * Table Styles */
-.user-table {
-    width: 100%;
-    margin-bottom: 20px;
-    border-collapse: collapse;
-    background-color: #222;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-}
-
-.user-table th, .user-table td {
-    padding: 12px 15px;
-    text-align: center;
-    border-bottom: 1px solid #444;
-}
-
-.user-table th {
-    background-color: #333;
-}
-
-.user-table tr:hover {
-    background-color: #444;
-}
-
-.chart-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .chart-container {
-    position: relative;
-    width: 150px;
-    height: 170px;
-    margin: 20 auto;
-  }
-  
-  canvas {
-    display: block;
-    margin: 0 auto;
-  }
-  
-  .chart-labels {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    text-align: left;
-  }
-  
-  .chart-labels p {
-    margin: 5px 0;
-    font-size: 14px;
-  }
-  
-  .chart-labels span {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
-  }
-  
-  .chart-labels .yellow {
-    background-color: yellow;
-  }
-  
-  .chart-labels .red {
-    background-color: red;
-  }
-  .chart-labels .yellow {
-    background-color: #ff9500; /* Change to the new color */
-}
+ 
