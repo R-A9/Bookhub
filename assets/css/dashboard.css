@@ -83,7 +83,9 @@ a{
     cursor: pointer;
     transition: background 0.3s ease;
   }
-  
+  a{
+    text-decoration: none;
+  }
   .sidebar .logout button:hover {
     background: #ff9500;
   }
