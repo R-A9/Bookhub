@@ -18,6 +18,7 @@ For the meantime, it will be hosted locally using a Raspberry Pi 1 B+.
 The plans are:
 + ~~Use another B2ats instance solely for database operation~~
 + Upgrade to higher-spec instance, or local hosting
-+ Use React.js for code reusability
-+ PHP for backend?
++ ~~Use React.js for code reusability~~
++ PHP for backend
++ WebAuthn & e-Mail OTP for admin auth
 
