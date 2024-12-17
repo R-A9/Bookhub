@@ -8,7 +8,7 @@ Visit us [here](https://bookhub.c1phertime.me).
 
 **UPDATE:**
 
-The Azure instance used to host Bookhub's frontend **__has been taken down__** due to lack of funds needed for proper hosting. It will be brought back up when the project is nearing the backend development phase.
+The Azure instance used to host Bookhub's frontend **__has been taken down__** due to lack of funds needed for proper hosting. It will be brought back up when the project has completed the backend development phase.
 
 For the meantime, it will be hosted locally using a Raspberry Pi 1 B+. 
 
