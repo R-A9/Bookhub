@@ -139,33 +139,65 @@
   const availableBooks = totalBooks - borrowedBooks;
 
   const data = [availableBooks, borrowedBooks];
-  const colors = ["#ff9500", "red"]; // Updated color
+  const colors = ["#ff9500", "red"]; // Colors for the slices
 
-  // Calculate total data value
-  const total = data.reduce((sum, value) => sum + value, 0);
+  // Animation settings
+  const animationDuration = 1000; // Animation duration in milliseconds
+  const animationSteps = 60; // Number of animation frames
+  const interval = animationDuration / animationSteps; // Time between frames
 
-  // Draw the donut chart
-  let startAngle = 0;
-  for (let i = 0; i < data.length; i++) {
-    const sliceAngle = (data[i] / total) * 2 * Math.PI;
+  let currentStep = 0;
 
-    // Draw the segment
+  // Function to draw the chart for the current progress
+  function drawChart(progress) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    let startAngle = 0;
+
+    for (let i = 0; i < data.length; i++) {
+      const sliceValue = data[i];
+      const sliceAngle = (sliceValue / totalBooks) * 2 * Math.PI * progress;
+
+      // Draw the slice
+      ctx.beginPath();
+      ctx.moveTo(canvas.width / 2, canvas.height / 2);
+      ctx.arc(
+        canvas.width / 2,
+        canvas.height / 2,
+        canvas.width / 2,
+        startAngle,
+        startAngle + sliceAngle
+      );
+      ctx.closePath();
+      ctx.fillStyle = colors[i];
+      ctx.fill();
+
+      startAngle += sliceAngle;
+    }
+
+    // Draw the inner circle for the donut effect
     ctx.beginPath();
-    ctx.moveTo(canvas.width / 2, canvas.height / 2);
-    ctx.arc(canvas.width / 2, canvas.height / 2, canvas.width / 2, startAngle, startAngle + sliceAngle);
-    ctx.closePath();
-    ctx.fillStyle = colors[i];
+    ctx.arc(canvas.width / 2, canvas.height / 2, canvas.width / 4, 0, 2 * Math.PI);
+    ctx.fillStyle = "black"; // Inner circle color
     ctx.fill();
-
-    startAngle += sliceAngle;
   }
 
-  // Draw the inner circle for the donut effect
-  ctx.beginPath();
-  ctx.arc(canvas.width / 2, canvas.height / 2, canvas.width / 4, 0, 2 * Math.PI);
-  ctx.fillStyle = "black"; // Set the inner circle color to black
-  ctx.fill();
+  // Animation loop
+  function animateChart() {
+    currentStep++;
+    const progress = currentStep / animationSteps;
+
+    drawChart(progress);
+
+    if (currentStep < animationSteps) {
+      requestAnimationFrame(animateChart);
+    }
+  }
+
+  // Start the animation
+  animateChart();
 });
+
 
 
 
