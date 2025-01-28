@@ -6,6 +6,16 @@
   <title>Book Hub - Dashboard</title>
   <link rel="stylesheet" href="assets/css/dashboard.css">
   <link rel="icon" href="assets/img/bookhub.png">
+  <style>
+    .buttons button {
+    background: orange;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+  </style>
 </head>
 <body>
     <div class="container">
@@ -14,7 +24,7 @@
         <h1>Book <span class="highlight">hub</span></h1>
         <nav>
           <ul>
-            <li class="active">Dashboard</li>
+            <li>Dashboard</li>
             <a href="books.html"><li>Books</li></a>
             <a href="aboutus.html"><li>About us</li></a>
             <li>Favorites</li>
@@ -29,7 +39,9 @@
   
       <!-- Main Content -->
       <main>
-        <a href="library.html" class="back-icon">&#8592;</a>
+        <div class="buttons">
+        <a href="library.html"><button>Back</button></a>
+    </div>
         <section class="table-section">
           <table>
             <thead>
