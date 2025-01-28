@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!-- saved from url=(0053)file:///C:/Users/CLIENT/Desktop/Bookhub/add_book.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book Hub - Add Book</title>
   <style>
@@ -108,6 +108,8 @@ height:30px;
     background: linear-gradient(to bottom, rgba(153, 149, 149, 0.8), rgba(70, 69, 67, 0.295));
   }
 
+
+
   .card::before {
     content: "";
     position: absolute;
@@ -122,15 +124,15 @@ height:30px;
 
     .card .image {
       flex: 1;
-    background-image: url(add_logo.png); /* Replace 'your-image.jpg' with the path to your image */
+    background-image: url(assets/img/add_logo1\ 1.png); /* Replace 'your-image.jpg' with the path to your image */
     background-size: cover; /* Ensures the image covers the entire area */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat;
     }
 
     .card .image img {
-      width: 100%;
-      max-width: 300px;
+      width: 400px;
+      max-width: 800px;
       object-fit: cover;
     }
 
@@ -272,11 +274,13 @@ height:30px;
     <!-- Main Content -->
     
     <main class="main-content">
+      <div class="logout-card"></div>
       
       <div class="card">
+
         <!-- Image Section -->
         <div class="image">
-          <img src="./Book Hub - Add Book_files/add_logo.png" alt="Book Image">
+          <img src="assets/img/add_logo1 1.png" alt="Book Image">
         </div>
 
         <!-- Form Section -->
@@ -287,12 +291,12 @@ height:30px;
           <form>
             <div class="form-group">
               <label for="bookId">Book ID</label>
-              <input type="number" id="bookId" name="bookId" placeholder="Enter Book ID" required="">
+              <input type="number" id="bookId" name="bookId" placeholder="Enter Book ID" required>
             </div>
             <div class="form-group">
               <label for="genre">Genre</label>
-              <select id="genre" name="genre" required="">
-                <option value="" disabled="" selected="">Choose Genre</option>
+              <select id="genre" name="genre" required>
+                <option value="" disabled selected>Choose Genre</option>
                 <option value="horror">Horror</option>
                 <option value="comedy">Comedy</option>
                 <option value="scifi">Sci-Fi</option>
@@ -300,12 +304,12 @@ height:30px;
             </div>
             <div class="form-group">
               <label for="bookName">Book Name</label>
-              <input type="text" id="bookName" name="bookName" placeholder="Enter Book Name" required="">
+              <input type="text" id="bookName" name="bookName" placeholder="Enter Book Name" required>
             </div>
             <div class="form-group">
               <label for="languages">Languages</label>
-              <select id="languages" name="languages" required="">
-                <option value="" disabled="" selected="">Choose Language</option>
+              <select id="languages" name="languages" required>
+                <option value="" disabled selected>Choose Language</option>
                 <option value="tagalog">Tagalog</option>
                 <option value="english">English</option>
                 <option value="chinese">Chinese</option>
@@ -313,7 +317,7 @@ height:30px;
             </div>
             <div class="form-group">
               <label for="authorName">Author Name</label>
-              <input type="text" id="authorName" name="authorName" placeholder="Enter Author Name" required="">
+              <input type="text" id="authorName" name="authorName" placeholder="Enter Author Name" required>
             </div>
             <div class="form-group">
               <label for="contributors">Contributors</label>
@@ -329,7 +333,7 @@ height:30px;
             </div>
             <div class="form-group">
               <label for="pName">Publisher Name</label>
-              <input type="text" id="pName" name="pName" placeholder="Enter Publisher Name" required="">
+              <input type="text" id="pName" name="pName" placeholder="Enter Publisher Name" required>
             </div>
             <div class="form-group">
               <label for="bDescription">Book Description</label>
@@ -349,6 +353,5 @@ height:30px;
       </div>
     </main>
   </div>
-
-
-</body></html>
+</body>
+</html>
